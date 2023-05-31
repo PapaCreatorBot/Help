@@ -81,13 +81,18 @@
 
 ## Coding in papa creator bot
 * Methods 
-`Bot.sendMessage(text)`
-`Bot.sendKeyboard(button,text)`
-`Bot.sendInlineKeyboard(inline_button, text)`
-`Bot.editInlineKeyboard(button, message_id)`
+ 1. send message `Bot.sendMessage("text")`
+ 2. send keyboard `Bot.sendKeyboard("btn","text")`
+ 3. send inline keyboard `Bot.sendInlineKeyboard([[{ title:"btn",command:"/btn" }]], "text")`
+ 4. edit inline keyboard `Bot.editInlineKeyboard([[{ title:"btn",command:"/btn" }]], request.message.message_id)`
 * Api method 
 https://core.telegram.org/bots/api
-`Api.sendMessage({ text: text })`
-`Api.editMessageText({ message_id: message_id, text: text })`
-See the telegram doc.
+1. send message `Api.sendMessage({ text: "text" })`
+
+ 2. send keyboard `Api.sendMessage({ text: "text", reply_markup: { resize_keyboard: true, keyboard: [[{ text: "btn" }]] } })`
+
+ 3. send inline keyboard `Api.sendMessage({ text: "text", reply_markup: { inline_keyboard: [[{ text: "btn",callback_data:"/btn" }]] } })`
+
+ 4. edit inline keyboard `Api.editMessageText({ message_id: request.message.message_id, text: "text",reply_markup: { inline_keyboard: [[{ text: "new btn",callback_data:"/btn" }]] }  })`
+See the telegram doc for more.
 
