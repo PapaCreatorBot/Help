@@ -183,3 +183,18 @@ list.order_ascending = false`
 * `var Myreferral = Libs.ReferralLib.getAttractedBy()`
 
 # If you dont know How it Work You can Ask Join Telegram Group
+* 📨 **Email**:
+
+papacreatorbot@gmail.com
+
+* 🌐 **Group Chat**:
+
+https://t.me/papacreator
+
+* 🌐 **Channel**:
+
+https://t.me/newspapacreatorbot
+
+* 🌐 **Unofficial Channel**:
+
+https://t.me/PapacodeDrop
