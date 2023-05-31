@@ -57,7 +57,6 @@
  Bot.runCommand("/ontest")`
 
 1. **for options data**
-
 `// Bot.runCommand("/ontest",{data:"okay"})`
 
 4. Wait for answer `"OFF"`
