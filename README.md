@@ -85,7 +85,7 @@
  2. send keyboard `Bot.sendKeyboard("btn","text")`
  3. send inline keyboard `Bot.sendInlineKeyboard([[{ title:"btn",command:"/btn" }]], "text")`
  4. edit inline keyboard `Bot.editInlineKeyboard([[{ title:"btn",command:"/btn" }]], request.message.message_id)`
-### Api method 
+### api method 
 https://core.telegram.org/bots/api
 1. send message `Api.sendMessage({ text: "text" })`
 
@@ -99,6 +99,45 @@ See the telegram doc for more.
 ### Response request
 **GET and POST response**
 
-`HTTPget({ url: "url", //Body if need//body:{},//Headers if need.//headers:{},
+`HTTPget({ url: "url",//Body if need//body:{},//Headers if need.//headers:{},
 success: "/success"
 })`
+
+### Properties 
+**Properties can be**
+
+* `integer`, `float`, `true`, `false`, `string`, `text`, `json`, `datetime`
+
+**Bot Set Data**
+
+* `Bot.setProperty("YourPropName","hello world!","string")`
+
+**Getting Bot Data**
+
+* `Bot.getProperty("YourPropName")`
+
+**Bot set User Data**
+
+* `User.setProperty("YourPropName",5,"integer")`
+
+**Getting User Data**
+
+* `User.getProperty("YourPropName")`
+
+### Balance
+**User Balance**
+
+* `var balance = Libs.ResourcesLib.userRes("money");`
+
+**Global Balance**
+
+* `var Globalbalance = Libs.ResourcesLib.anotherChatRes("money", "global")`
+
+**Another Balance**
+
+* `// telegramid - it is telegram id for another user
+var balance = Libs.ResourcesLib.anotherUserRes("money", telegramid);`
+
+**Balance can use**
+
+* `balance.add(1)`, `balance.remove(1)`, `balance.value()`, `balance.value().toFixed(4)`
