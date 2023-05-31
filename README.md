@@ -89,5 +89,5 @@
 https://core.telegram.org/bots/api
 `Api.sendMessage({ text: text })`
 `Api.editMessageText({ message_id: message_id, text: text })`
-**See the telegram doc.**
+See the telegram doc.
 
