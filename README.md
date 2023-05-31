@@ -57,6 +57,7 @@
  Bot.runCommand("/ontest")`
 
 1. **for options data**
+
 `// Bot.runCommand("/ontest",{data:"okay"})`
 
 4. Wait for answer `"OFF"`
@@ -72,7 +73,8 @@
 
 3. Fill codes: `Bot.sendMessage("Hello "±message±"")`
 
-1. **for options data** `// Bot.inspect(options)`
+1. **for options data** 
+`// Bot.inspect(options)`
 
 4. Wait for answer `"ON"`
 
@@ -81,15 +83,15 @@
 
 ## Coding in papa creator bot
 ### Run other command
-* Bot.runCommand("command")
+* `Bot.runCommand("command")`
 
 **For Passing options**
-1. * `Bot.runCommand("command",{data:"have data"})`
+1. `Bot.runCommand("/command",{data:"have data"})`
 
-2. * `Bot.run({command:"command", options:{data:"have data"}})`
+2. `Bot.run({command:"/command", options:{data:"have data"}})`
 
 **Run command Delay 60sec.**
-* Bot.run({command:"command", run_after:60})
+* Bot.run({command:"/command", run_after:60})
 
 ### Methods 
  1. send message `Bot.sendMessage("text")`
