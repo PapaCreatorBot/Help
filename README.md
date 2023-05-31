@@ -57,7 +57,7 @@
  Bot.runCommand("/ontest")`
 
 1. **for options data**
-`//Bot.run({ command: "/ontest", options: { data: "test" } })`
+`// Bot.run({ command: "/ontest", options: { data: "test" } })`
 
 4. Wait for answer `"OFF"`
 
@@ -72,7 +72,7 @@
 
 3. Fill codes: `Bot.sendMessage("Hello "±message±"")`
 
-1. **for options data** `//Bot.inspect(options)`
+1. **for options data** `// Bot.inspect(options)`
 
 4. Wait for answer `"ON"`
 
@@ -99,7 +99,7 @@ See the telegram doc for more.
 ### Response request
 **GET and POST response**
 
-`HTTPget({ url: "url",//Body if need//body:{},//Headers if need.//headers:{},
+`HTTPget({ url: "url",// Body if need// body:{},// Headers if need.// headers:{},
 success: "/success"
 })`
 
