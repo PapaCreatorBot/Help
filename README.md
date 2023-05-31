@@ -55,8 +55,9 @@
 
 3. Fill codes: `Bot.sendMessage("What is your name?")
  Bot.runCommand("/ontest")`
-`//for options data
-//Bot.run({ command: "/ontest", options: { data: "test" } })`
+
+1. **for options data**
+`//Bot.run({ command: "/ontest", options: { data: "test" } })`
 
 4. Wait for answer `"OFF"`
 
