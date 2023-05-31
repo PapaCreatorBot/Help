@@ -72,7 +72,7 @@
 
 3. Fill codes: `Bot.sendMessage("Hello "±message±"")`
 
-1. for options data `//Bot.inspect(options)`
+1. **for options data** `//Bot.inspect(options)`
 
 4. Wait for answer `"ON"`
 
@@ -81,12 +81,13 @@
 
 ## Coding in papa creator bot
 * Methods 
-Bot.sendMessage(text)
-Bot.sendKeyboard(button,text)
-Bot.sendInlineKeyboard(inline_button, text)
-Bot.editInlineKeyboard(button, message_id)
-Api method 
+`Bot.sendMessage(text)`
+`Bot.sendKeyboard(button,text)`
+`Bot.sendInlineKeyboard(inline_button, text)`
+`Bot.editInlineKeyboard(button, message_id)`
+* Api method 
 https://core.telegram.org/bots/api
-Api.editMessageText({ message_id: message_id, text: text })
-See the telegram doc.
+`Api.sendMessage({ text: text })`
+`Api.editMessageText({ message_id: message_id, text: text })`
+**See the telegram doc.**
 
