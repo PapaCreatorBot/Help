@@ -43,7 +43,7 @@
 
 * Command 1
 
-1. Don't Not Fill answer
+1. Don't Fill answer
 
 2. Fill command: `/test`
 
@@ -57,7 +57,7 @@
 
 * Command 2
 
-1. Don't Not Fill answer
+1. Don't Fill answer
 
 2. Fill command: /ontest
 
@@ -66,3 +66,7 @@
 4. Wait for answer `"ON"`
 
 5. Click Save button Done!
+
+### result
+
+![]()
