@@ -71,7 +71,8 @@
 2. Fill command: `/ontest`
 
 3. Fill codes: `Bot.sendMessage("Hello "±message±"")`
-`//Bot.inspect(options)`
+
+1. for options data `//Bot.inspect(options)`
 
 4. Wait for answer `"ON"`
 
