@@ -172,7 +172,12 @@ Libs.ReferralLib.track(trackOptions)`
 
 **Referral Top List**
 
-* `var list = Libs.ReferralLib.getTopList()
-list.order_by = "integer_value"
-list.order_ascending = false
-var items = list.get()`
+* `var list = Libs.ReferralLib.getTopList()`
+
+* `list.order_by = "integer_value"
+list.order_ascending = false`
+
+* `var items = list.get()`
+
+**My Referral**
+* `var Myreferral = Libs.ReferralLib.getAttractedBy()`
