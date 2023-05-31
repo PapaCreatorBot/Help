@@ -131,12 +131,13 @@ success: "/success"
 
 **Global Balance**
 
-* `var Globalbalance = Libs.ResourcesLib.anotherChatRes("money", "global")`
+* `var Globalbalance = Libs.ResourcesLib.anotherChatRes("money", "global");`
 
 **Another Balance**
 
-* `// telegramid - it is telegram id for another user
-var balance = Libs.ResourcesLib.anotherUserRes("money", telegramid);`
+telegramid - it is telegram id for another user
+
+`var balance = Libs.ResourcesLib.anotherUserRes("money", telegramid);`
 
 **Balance can use**
 
