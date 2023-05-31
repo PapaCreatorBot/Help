@@ -14,7 +14,7 @@
 
 1. Tap the button "create a new command"
  
-2. Fill your command name
+2. Fill command: `/start`
 
 3. Fill Codes: `Bot.sendMessage("Hello World!")`
 
@@ -34,6 +34,10 @@
 4. Wait for answer `"ON"`
 
 5. Click Save button Done!
+
+### result
+
+![]()
 
 ## How to use Wait for Answer multiple command
 
