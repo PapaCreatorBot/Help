@@ -10,6 +10,8 @@
 
 4. Done! START the bot and make commands
 
+
+
 ## How to create command on Papa Creator Bot?
 
 1. Tap the button "create a new command"
@@ -22,6 +24,8 @@
 
 ### result
 ![](https://github.com/PapaCreatorBot/Help/blob/6930411f86321ec81f5d824ca1a4ccbf99bc8142/images/IMG_20230531_124504.jpg)
+
+
 
 ## How to use Answer
 
@@ -38,6 +42,8 @@
 ### result
 
 ![](https://github.com/PapaCreatorBot/Help/blob/main/images/IMG_20230531_125804.jpg)
+
+
 
 ## How to use Wait for Answer multiple command
 
