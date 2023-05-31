@@ -56,8 +56,7 @@
 3. Fill codes: `Bot.sendMessage("What is your name?")
  Bot.runCommand("/ontest")`
 
-1. **for options data**
-`// Bot.runCommand("/ontest",{data:"okay"})`
+1. **for options data** `Bot.runCommand("/ontest",{data:"okay"})`
 
 4. Wait for answer `"OFF"`
 
@@ -72,7 +71,7 @@
 
 3. Fill codes: `Bot.sendMessage("Hello "±message±"")`
 
-1. **for options data** `// Bot.inspect(options)`
+1. **for options data** ` Bot.inspect(options)`
 
 4. Wait for answer `"ON"`
 
