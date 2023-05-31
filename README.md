@@ -137,10 +137,41 @@ success: "/success"
 
 telegramid - it is telegram id for another user
 
-`var balance = Libs.ResourcesLib.anotherUserRes("money", telegramid);`
+* `var balance = Libs.ResourcesLib.anotherUserRes("money", telegramid);`
 
 **Balance can use**
 
 * `balance.add(1)`, `balance.remove(1)`, `balance.value()`, `balance.value().toFixed(4)`
 
 ### Referral
+* Basic function is **track**. Prefer to call it on /start
+
+* `function doTouchOwnLink(){
+Bot.sendMessage("You click on yours own link!")}`
+
+* `function doAttracted(refUser){
+Bot.sendMessage("Hello" ± "\n\n" ± "You attracted by user: " ± Libs.commonLib.getLinkFor(refUser))
+Bot.sendMessageToChatWithId(refUser.telegramid,"You just attract new user: " ± Libs.commonLib.getLinkFor(user))}`
+
+* `function doAlreadyAttracted(){
+Bot.sendMessage("You was already attracted")}`
+
+* `var trackOptions = { onTouchOwnLink:doTouchOwnLink,onAttracted:doAttracted, onAlreadyAttracted:doAlreadyAttracted }
+Libs.ReferralLib.track(trackOptions)`
+
+**Referral Link**
+
+* `var link = Libs.ReferralLib.getLink()`
+
+**Referral List**
+* `var refList = Libs.ReferralLib.getRefList()`
+* `var users = refList.getUsers()`
+
+**Referral Count**
+* `Libs.ReferralLib.getRefCount()`
+
+**Referral Top List**
+`var list = Libs.ReferralLib.getTopList()
+list.order_by = "integer_value"
+list.order_ascending = false
+var items = list.get()`
