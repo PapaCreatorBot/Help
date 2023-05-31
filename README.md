@@ -80,6 +80,15 @@
 
 
 ## Coding in papa creator bot
+### Run other command
+* Bot.runCommand("command")
+**For Passing options**
+1. * `Bot.runCommand("command",{data:"have data"})`
+
+2. * `Bot.run({command:"command", options:{data:"have data"}})`
+**Run command Delay 60sec.**
+* Bot.run({command:"command", run_after:60})
+
 ### Methods 
  1. send message `Bot.sendMessage("text")`
  2. send keyboard `Bot.sendKeyboard("btn","text")`
