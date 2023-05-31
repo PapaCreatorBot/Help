@@ -181,3 +181,5 @@ list.order_ascending = false`
 
 **My Referral**
 * `var Myreferral = Libs.ReferralLib.getAttractedBy()`
+
+# If you dont know How it Work You can Ask Join Telegram Group
