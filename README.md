@@ -53,9 +53,9 @@
 
 2. Fill command: `/test`
 
-3. Fill codes: `Bot.sendMessage("What is your name?") 
- Bot.runCommand("/ontest")
-//for options data
+3. Fill codes: `Bot.sendMessage("What is your name?")
+ Bot.runCommand("/ontest")`
+`//for options data
 //Bot.run({ command: "/ontest", options: { data: "test" } })`
 
 4. Wait for answer `"OFF"`
@@ -70,10 +70,21 @@
 2. Fill command: `/ontest`
 
 3. Fill codes: `Bot.sendMessage("Hello "±message±"")`
-//Bot.inspect(options)
+`//Bot.inspect(options)`
 
 4. Wait for answer `"ON"`
 
 5. Click Save button Done!
 
+
+## Coding in papa creator bot
+* Methods 
+Bot.sendMessage(text)
+Bot.sendKeyboard(button,text)
+Bot.sendInlineKeyboard(inline_button, text)
+Bot.editInlineKeyboard(button, message_id)
+Api method 
+https://core.telegram.org/bots/api
+Api.editMessageText({ message_id: message_id, text: text })
+See the telegram doc.
 
