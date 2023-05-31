@@ -141,3 +141,5 @@ var balance = Libs.ResourcesLib.anotherUserRes("money", telegramid);`
 **Balance can use**
 
 * `balance.add(1)`, `balance.remove(1)`, `balance.value()`, `balance.value().toFixed(4)`
+
+### Referral
