@@ -76,6 +76,4 @@
 
 5. Click Save button Done!
 
-### result
 
-![]()
