@@ -173,16 +173,14 @@ Libs.ReferralLib.track(trackOptions)`
 **Referral Top List**
 
 * `var list = Libs.ReferralLib.getTopList()`
-
 * `list.order_by = "integer_value"
 list.order_ascending = false`
-
 * `var items = list.get()`
 
 **My Referral**
 * `var Myreferral = Libs.ReferralLib.getAttractedBy()`
 
-# If you dont know How it Work You can Ask Join Telegram Group
+# If you Dont know How it Work You can Ask Join Telegram Group
 * 📨 **Email**:
 
 papacreatorbot@gmail.com
