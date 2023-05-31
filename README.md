@@ -91,7 +91,7 @@
 2. `Bot.run({command:"/command", options:{data:"have data"}})`
 
 **Run command Delay 60sec.**
-* Bot.run({command:"/command", run_after:60})
+* `Bot.run({command:"/command", run_after:60})`
 
 ### Methods 
  1. send message `Bot.sendMessage("text")`
