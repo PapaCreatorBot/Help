@@ -16,44 +16,46 @@
  
 2. Fill your command name
 
-3. Fill Codes 
-`Bot.sendMessage("Hello World!")`
+3. Fill Codes: `Bot.sendMessage("Hello World!")`
+
 5. Click save button Done!
 
-## How to use answer
+## How to use Answer
 
-1. Fill answer
+1. Fill answer:
 `"What is your name?"`
 
 
-3. Fill Codes 
-`Bot.sendMessage("Hi "±message±"")`
-4. Wait for answer "ON"
+3. Fill Codes: `Bot.sendMessage("Hi "±message±"")`
+
+4. Wait for answer `"ON"`
 
 5. Click Save button Done!
 
-## How to use wait for answer multiple command
+## How to use Wait for Answer multiple command
 
 * Command 1
 
-Don't Fill answer
+1. Don't Not Fill answer
 
-Fill your command name Example: /test
+2. Fill command: `/test`
 
-Fill your codes Example: Bot.sendMessage("What is your name?") Bot.runCommand("/ontest")
+3. Fill codes: `Bot.sendMessage("What is your name?") 
+ Bot.runCommand("/ontest")`
 
-Wait for answer "OFF"
+4. Wait for answer `"OFF"`
 
-Click Save
+5. Click Save button Done!
 
-Command 2
 
-Don't Fill answer
+* Command 2
 
-Fill your command name example: /ontest
+1. Don't Not Fill answer
 
-Fill your codes Example: Bot.sendMessage("Hello "±message±"")
+2. Fill command: /ontest
 
-Wait for answer "ON"
+3. Fill codes: `Bot.sendMessage("Hello "±message±"")`
 
-Click Save
+4. Wait for answer `"ON"`
+
+5. Click Save button Done!
