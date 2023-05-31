@@ -171,7 +171,9 @@ Libs.ReferralLib.track(trackOptions)`
 
 **Referral Link**
 
-* `var link = Libs.ReferralLib.getLink()`
+* `var link = Libs.ReferralLib.getLink()`**Referral Set Link**
+* `Libs.ReferralLib.setLinkPrefix("")`
+* `Libs.ReferralLib.setLinkPrefix("User")`
 
 **Referral List**
 * `var refList = Libs.ReferralLib.getRefList()`
