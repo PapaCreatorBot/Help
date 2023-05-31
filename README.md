@@ -37,7 +37,7 @@
 
 ### result
 
-![]()
+![](https://github.com/PapaCreatorBot/Help/blob/main/images/IMG_20230531_125804.jpg)
 
 ## How to use Wait for Answer multiple command
 
