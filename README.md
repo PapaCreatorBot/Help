@@ -41,27 +41,30 @@
 
 ## How to use Wait for Answer multiple command
 
-* Command 1
+* **Command 1**
 
 1. Don't Fill answer
 
 2. Fill command: `/test`
 
 3. Fill codes: `Bot.sendMessage("What is your name?") 
- Bot.runCommand("/ontest")`
+ Bot.runCommand("/ontest")
+//for options data
+//Bot.run({ command: "/ontest", options: { data: "test" } })`
 
 4. Wait for answer `"OFF"`
 
 5. Click Save button Done!
 
 
-* Command 2
+* **Command 2**
 
 1. Don't Fill answer
 
-2. Fill command: /ontest
+2. Fill command: `/ontest`
 
 3. Fill codes: `Bot.sendMessage("Hello "±message±"")`
+//Bot.inspect(options)
 
 4. Wait for answer `"ON"`
 
