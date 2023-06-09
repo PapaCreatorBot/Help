@@ -151,7 +151,7 @@ Bot.sendInlineKeyboard([[{ title:"btn",command:"/btn" }]], "text")
 ```javascript
 Bot.editInlineKeyboard([[{ title:"btn",command:"/btn" }]]request.message.message_id)
 ```
-### api method 
+### API Method 
 https://core.telegram.org/bots/api
 1. send message
 ```javascript
@@ -163,17 +163,31 @@ Api.sendMessage({ text: "text" })
 Api.sendMessage({ text: "text", reply_markup: { resize_keyboard: true, keyboard: [[{ text: "btn" }]] } })
 ```
 
- 3. send inline keyboard `Api.sendMessage({ text: "text", reply_markup: { inline_keyboard: [[{ text: "btn",callback_data:"/btn" }]] } })`
+ 3. send inline keyboard 
+```javascript
+ Api.sendMessage({ text: "text", reply_markup: { inline_keyboard: [[{ text: "btn",callback_data:"/btn" }]] } })
+```
 
- 4. edit inline keyboard `Api.editMessageText({ message_id: request.message.message_id, text: "text",reply_markup: { inline_keyboard: [[{ text: "new btn",callback_data:"/btn" }]] }  })`
+ 4. edit inline keyboard
+ ```javascript
+ Api.editMessageText({ message_id: request.message.message_id, text: "text",reply_markup: { inline_keyboard: [[{ text: "new btn",callback_data:"/btn" }]] }  })
+```
 See the telegram doc for more.
 
 ### Response request
 **GET and POST response**
 
-`HTTPget({ url: "url",// Body if need// body:{},// Headers if need.// headers:{},
-success: "/success"
-})`
+```javascript
+HTTPget({ url: "url",
+// Body if need// body:{},
+// Headers if need.
+// headers:{},
+success: "/success",
+error: "/error"
+//, follow_redirects: true
+//, cookies: ""
+})
+```
 
 ### Properties 
 **Properties can be**
@@ -182,34 +196,48 @@ success: "/success"
 
 **Bot Set Data**
 
-* `Bot.setProperty("YourPropName","hello world!","string")`
+```javascript
+Bot.setProperty("YourPropName","hello world!","string")
+```
 
 **Getting Bot Data**
 
-* `Bot.getProperty("YourPropName")`
+```javascript
+Bot.getProperty("YourPropName")
+```
 
 **Bot set User Data**
 
-* `User.setProperty("YourPropName",5,"integer")`
+```javascript
+User.setProperty("YourPropName",5,"integer")
+```
 
 **Getting User Data**
 
-* `User.getProperty("YourPropName")`
+```javascript
+User.getProperty("YourPropName")
+```
 
 ### Balance
 **User Balance**
 
-* `var balance = Libs.ResourcesLib.userRes("money");`
+```javascript
+var balance = Libs.ResourcesLib.userRes("money");
+```
 
 **Global Balance**
 
-* `var Globalbalance = Libs.ResourcesLib.anotherChatRes("money", "global");`
+```javascript
+var Globalbalance = Libs.ResourcesLib.anotherChatRes("money", "global");
+```
 
 **Another Balance**
 
 telegramid - it is telegram id for another user
 
-* `var balance = Libs.ResourcesLib.anotherUserRes("money", telegramid);`
+```javascript
+var balance = Libs.ResourcesLib.anotherUserRes("money", telegramid);
+```
 
 **Balance can use**
 
@@ -238,28 +266,41 @@ Libs.ReferralLib.track(trackOptions)
 
 **Referral Link**
 
-* `var link = Libs.ReferralLib.getLink()`
+```javascript
+var link = Libs.ReferralLib.getLink()
+```
 
 * **Referral Set Link**
-* `Libs.ReferralLib.setLinkPrefix("")`
-* `Libs.ReferralLib.setLinkPrefix("User")`
+```javascript
+Libs.ReferralLib.setLinkPrefix("")
+Libs.ReferralLib.setLinkPrefix("User")
+```
 
 **Referral List**
-* `var refList = Libs.ReferralLib.getRefList()`
-* `var users = refList.getUsers()`
+```javascript
+var refList = Libs.ReferralLib.getRefList()
+var users = refList.getUsers()
+```
 
 **Referral Count**
-* `Libs.ReferralLib.getRefCount()`
+```javascript
+Libs.ReferralLib.getRefCount()
+```
 
 **Referral Top List**
 
-* `var list = Libs.ReferralLib.getTopList()`
-* `list.order_by = "integer_value"
-list.order_ascending = false`
-* `var items = list.get()`
+```javascript
+var list = Libs.ReferralLib.getTopList()`
+list.order_by = "integer_value"
+list.order_ascending = false
+
+var items = list.get()
+```
 
 **My Referral**
-* `var Myreferral = Libs.ReferralLib.getAttractedBy()`
+```javascript
+var Myreferral = Libs.ReferralLib.getAttractedBy()
+```
 
 # If you Dont know How it Work You can Ask Join Telegram Group
 * 📨 **Email**:
