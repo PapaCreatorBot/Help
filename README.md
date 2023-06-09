@@ -71,7 +71,8 @@ Bot.runCommand("/ontest")
 1. **for passing data** 
 ```javascript
 Bot.sendMessage("What is your name?")
-Bot.runCommand("/ontest",{ data: "Your data here." })
+Bot.runCommand("/ontest",
+{ data: "Your data here." })
 ```
 
 4. Wait for answer `"OFF"`
@@ -129,7 +130,7 @@ run_after: 60
 Bot.run({
 command: "/command",
 run_after: 60,
-options:{ data: "Your data here"}
+options: { data: "Your data here" }
 })
 
 ```
@@ -145,32 +146,50 @@ Bot.sendMessage("text")
  ```
  4. send inline keyboard
 ```javascript
-Bot.sendInlineKeyboard([[{ title:"btn",command:"/btn" }]], "text")
+Bot.sendInlineKeyboard([[
+{ title: "btn",
+command: "/btn" } ]],
+"text")
 ```
  6. edit inline keyboard
 ```javascript
-Bot.editInlineKeyboard([[{ title:"btn",command:"/btn" }]]request.message.message_id)
+Bot.editInlineKeyboard(
+[[{ title: "btn",
+command: "/btn" }]],
+request.message.message_id)
 ```
 ### API Method 
 https://core.telegram.org/bots/api
 1. send message
 ```javascript
-Api.sendMessage({ text: "text" })
+Api.sendMessage({
+text: "text"
+})
 ```
 
  2. send keyboard
 ```javascript
-Api.sendMessage({ text: "text", reply_markup: { resize_keyboard: true, keyboard: [[{ text: "btn" }]] } })
+Api.sendMessage({
+text: "text",
+reply_markup: {
+resize_keyboard: true,
+keyboard: [[{ text: "btn" }]]
+}
+})
 ```
 
  3. send inline keyboard 
 ```javascript
- Api.sendMessage({ text: "text", reply_markup: { inline_keyboard: [[{ text: "btn",callback_data:"/btn" }]] } })
+ Api.sendMessage({
+ text: "text", reply_markup: { inline_keyboard: [[{ text: "btn",callback_data:"/btn" }]]
+}
+})
 ```
 
  4. edit inline keyboard
  ```javascript
- Api.editMessageText({ message_id: request.message.message_id, text: "text",reply_markup: { inline_keyboard: [[{ text: "new btn",callback_data:"/btn" }]] }  })
+ Api.editMessageText({ message_id: request.message.message_id, text: "text",reply_markup: { inline_keyboard: [[{ text: "new btn",callback_data:"/btn" }]] }
+ })
 ```
 See the telegram doc for more.
 
