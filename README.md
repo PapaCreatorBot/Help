@@ -18,7 +18,10 @@
  
 2. Fill command: `/start`
 
-3. Fill Codes: `Bot.sendMessage("Hello World!")`
+3. Fill Code: 
+```javascript
+Bot.sendMessage("Hello World!")
+```
 
 5. Click save button Done!
 
@@ -30,10 +33,16 @@
 ## How to use Answer
 
 1. Fill answer:
-`"What is your name?"`
+
+```
+What is your name?
+```
 
 
-3. Fill Codes: `Bot.sendMessage("Hi "±message±"")`
+3. Fill Codes:
+```javascript
+Bot.sendMessage("Hi "±message±"")
+```
 
 4. Wait for answer `"ON"`
 
@@ -53,10 +62,17 @@
 
 2. Fill command: `/test`
 
-3. Fill codes: `Bot.sendMessage("What is your name?")
- Bot.runCommand("/ontest")`
+3. Fill code: 
+```javascript
+Bot.sendMessage("What is your name?")
+Bot.runCommand("/ontest")
+```
 
-1. **for options data** `Bot.runCommand("/ontest",{data:"okay"})`
+1. **for passing data** 
+```javascript
+Bot.sendMessage("What is your name?")
+Bot.runCommand("/ontest",{ data: "Your data here." })
+```
 
 4. Wait for answer `"OFF"`
 
@@ -69,9 +85,17 @@
 
 2. Fill command: `/ontest`
 
-3. Fill codes: `Bot.sendMessage("Hello "±message±"")`
+3. Fill code:
+```javascript
 
-1. **for options data** ` Bot.inspect(options)`
+Bot.sendMessage("Hello "±message±"")
+```
+
+2. **for passing data**
+```javascript
+Bot.sendMessage("Hello "±message±"")
+Bot.inspect(options)
+```
 
 4. Wait for answer `"ON"`
 
@@ -80,26 +104,64 @@
 
 ## Coding in papa creator bot
 ### Run other command
-* `Bot.runCommand("command")`
+```javascript
+Bot.runCommand("/command")
+```
 
-**For Passing options**
-1. `Bot.runCommand("/command",{data:"have data"})`
+**For Passing data**
+```javascript
+Bot.runCommand("/command",
+{ data: "Your data here." })
+```
 
-2. `Bot.run({command:"/command", options:{data:"have data"}})`
 
 **Run command Delay 60sec.**
-* `Bot.run({command:"/command", run_after:60})`
+```javascript
+Bot.run({
+command: "/command",
+run_after: 60
+})
+```
+**For Passing data**
+
+```javascript
+
+Bot.run({
+command: "/command",
+run_after: 60,
+options:{ data: "Your data here"}
+})
+
+```
 
 ### Methods 
- 1. send message `Bot.sendMessage("text")`
- 2. send keyboard `Bot.sendKeyboard("btn","text")`
- 3. send inline keyboard `Bot.sendInlineKeyboard([[{ title:"btn",command:"/btn" }]], "text")`
- 4. edit inline keyboard `Bot.editInlineKeyboard([[{ title:"btn",command:"/btn" }]], request.message.message_id)`
+ 1. send message
+```javascript
+Bot.sendMessage("text")
+```
+ 3. send keyboard
+ ```javascript
+ Bot.sendKeyboard("btn","text")
+ ```
+ 4. send inline keyboard
+```javascript
+Bot.sendInlineKeyboard([[{ title:"btn",command:"/btn" }]], "text")
+```
+ 6. edit inline keyboard
+```javascript
+Bot.editInlineKeyboard([[{ title:"btn",command:"/btn" }]]request.message.message_id)
+```
 ### api method 
 https://core.telegram.org/bots/api
-1. send message `Api.sendMessage({ text: "text" })`
+1. send message
+```javascript
+Api.sendMessage({ text: "text" })
+```
 
- 2. send keyboard `Api.sendMessage({ text: "text", reply_markup: { resize_keyboard: true, keyboard: [[{ text: "btn" }]] } })`
+ 2. send keyboard
+```javascript
+Api.sendMessage({ text: "text", reply_markup: { resize_keyboard: true, keyboard: [[{ text: "btn" }]] } })
+```
 
  3. send inline keyboard `Api.sendMessage({ text: "text", reply_markup: { inline_keyboard: [[{ text: "btn",callback_data:"/btn" }]] } })`
 
@@ -156,18 +218,23 @@ telegramid - it is telegram id for another user
 ### Referral
 * Basic function is **track**. Prefer to call it on /start
 
-* `function doTouchOwnLink(){
-Bot.sendMessage("You click on yours own link!")}`
+```javascript
+function doTouchOwnLink(){
+Bot.sendMessage("You click on yours own link!")
+}
 
-* `function doAttracted(refUser){
+function doAttracted(refUser){
 Bot.sendMessage("Hello" ± "\n\n" ± "You attracted by user: " ± Libs.commonLib.getLinkFor(refUser))
-Bot.sendMessageToChatWithId(refUser.telegramid,"You just attract new user: " ± Libs.commonLib.getLinkFor(user))}`
+Bot.sendMessageToChatWithId(refUser.telegramid,"You just attract new user: " ± Libs.commonLib.getLinkFor(user))
+}
 
-* `function doAlreadyAttracted(){
-Bot.sendMessage("You was already attracted")}`
+function doAlreadyAttracted(){
+Bot.sendMessage("You was already attracted")}
 
-* `var trackOptions = { onTouchOwnLink:doTouchOwnLink,onAttracted:doAttracted, onAlreadyAttracted:doAlreadyAttracted }
-Libs.ReferralLib.track(trackOptions)`
+var trackOptions = { onTouchOwnLink:doTouchOwnLink,onAttracted:doAttracted, onAlreadyAttracted:doAlreadyAttracted }
+
+Libs.ReferralLib.track(trackOptions)
+```
 
 **Referral Link**
 
