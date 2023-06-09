@@ -324,7 +324,89 @@ var items = list.get()
 var Myreferral = Libs.ReferralLib.getAttractedBy()
 ```
 
+### Inline Mode
+1. Go to [@BotFather](https://t.me/BotFather)
+2. /mybots select your bot
+3. Bot settings
+4. Inline Mode turn `"ON"`
 
+Need create command `/inlineQuery`. Such a name is required.
+
+```javascript
+
+var list = []
+if(!request.query) {
+//without searching item
+list.push({
+  type: "article",
+  id: "id_1",
+  title: "ID no. 1",
+  description: "ID no. 1 description",
+  //thumb_url: image,
+ input_message_content: {
+    message_text: "ID no. 1 result",
+ parse_mode: "Markdown",
+ disable_web_page_preview: true
+  }
+})
+//no. 2
+list.push({
+  type: "article",
+  id: "id_2",
+  title: "ID no. 2",
+  description: "ID no. 2 description",
+  //thumb_url: image,
+ input_message_content: {
+    message_text: "ID no. 2 result",
+ parse_mode: "Markdown",
+ disable_web_page_preview: true
+  }
+})
+Api.answerInlineQuery({
+  inline_query_id: request.id,
+  results: list,
+  cache_time: 300
+})
+} else {
+//searching item
+var query = request.query.toLowerCase()
+if(query=="id_1"){
+list.push({
+  type: "article",
+  id: "id_1",
+  title: "ID no. 1",
+  description: "ID no. 1 description",
+  //thumb_url: image,
+ input_message_content: {
+    message_text: "ID no. 1 result",
+ parse_mode: "Markdown",
+ disable_web_page_preview: true
+  }
+})
+}
+if(query=="id_2"){
+list.push({
+  type: "article",
+  id: "id_2",
+  title: "ID no. 2",
+  description: "ID no. 2 description",
+  //thumb_url: image,
+ input_message_content: {
+    message_text: "ID no. 2 result",
+ parse_mode: "Markdown",
+ disable_web_page_preview: true
+  }
+})
+}
+Api.answerInlineQuery({
+  inline_query_id: request.id,
+  results: list,
+  cache_time: 300
+  })
+}
+```
+
+## Contact
 * 📨 **Email**:
 
 papacreatorbot@gmail.com
