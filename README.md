@@ -338,27 +338,27 @@ var list = []
 if(!request.query) {
 //without searching item
 list.push({
-  type: "article",
-  id: "id_1",
-  title: "ID no. 1",
-  description: "ID no. 1 description",
+  type: `article`,
+  id: `id_1`,
+  title: `ID no. 1`,
+  description: `ID no. 1 description`,
   //thumb_url: image,
  input_message_content: {
-    message_text: "ID no. 1 result",
- parse_mode: "Markdown",
+    message_text: `ID no. 1 result`,
+ parse_mode: `Markdown`,
  disable_web_page_preview: true
   }
 })
 //no. 2
 list.push({
-  type: "article",
-  id: "id_2",
-  title: "ID no. 2",
-  description: "ID no. 2 description",
+  type: `article`,
+  id: `id_2`,
+  title: `ID no. 2`,
+  description: `ID no. 2 description`,
   //thumb_url: image,
  input_message_content: {
-    message_text: "ID no. 2 result",
- parse_mode: "Markdown",
+    message_text: `ID no. 2 result`,
+ parse_mode: `Markdown`,
  disable_web_page_preview: true
   }
 })
@@ -370,30 +370,30 @@ Api.answerInlineQuery({
 } else {
 //searching item
 var query = request.query.toLowerCase()
-if(query=="id_1"){
+if(query==`id_1`){
 list.push({
-  type: "article",
-  id: "id_1",
-  title: "ID no. 1",
-  description: "ID no. 1 description",
+  type: `article`,
+  id: `id_1`,
+  title: `ID no. 1`,
+  description: `ID no. 1 description`,
   //thumb_url: image,
  input_message_content: {
-    message_text: "ID no. 1 result",
- parse_mode: "Markdown",
+    message_text: `ID no. 1 result`,
+ parse_mode: `Markdown`,
  disable_web_page_preview: true
   }
 })
 }
-if(query=="id_2"){
+if(query==`id_2`){
 list.push({
-  type: "article",
-  id: "id_2",
-  title: "ID no. 2",
-  description: "ID no. 2 description",
+  type: `article`,
+  id: `id_2`,
+  title: `ID no. 2`,
+  description: `ID no. 2 description`,
   //thumb_url: image,
  input_message_content: {
-    message_text: "ID no. 2 result",
- parse_mode: "Markdown",
+    message_text: `ID no. 2 result`,
+ parse_mode: `Markdown`,
  disable_web_page_preview: true
   }
 })
