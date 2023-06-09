@@ -20,7 +20,7 @@
 
 3. Fill Code: 
 ```javascript
-Bot.sendMessage("Hello World!")
+Bot.sendMessage(`Hello World!`)
 ```
 
 5. Click save button Done!
@@ -41,7 +41,7 @@ What is your name?
 
 3. Fill Codes:
 ```javascript
-Bot.sendMessage("Hi "±message±"")
+Bot.sendMessage(`Hi `±message±``)
 ```
 
 4. Wait for answer `"ON"`
@@ -64,15 +64,15 @@ Bot.sendMessage("Hi "±message±"")
 
 3. Fill code: 
 ```javascript
-Bot.sendMessage("What is your name?")
-Bot.runCommand("/ontest")
+Bot.sendMessage(`What is your name?`)
+Bot.runCommand(`/ontest`)
 ```
 
 1. **for passing data** 
 ```javascript
-Bot.sendMessage("What is your name?")
-Bot.runCommand("/ontest",
-{ data: "Your data here." })
+Bot.sendMessage(`What is your name?`)
+Bot.runCommand(`/ontest`,
+{ data: `Your data here.` })
 ```
 
 4. Wait for answer `"OFF"`
@@ -89,12 +89,12 @@ Bot.runCommand("/ontest",
 3. Fill code:
 ```javascript
 
-Bot.sendMessage("Hello "±message±"")
+Bot.sendMessage(`Hello `±message±``)
 ```
 
 2. **for passing data**
 ```javascript
-Bot.sendMessage("Hello "±message±"")
+Bot.sendMessage(`Hello `±message±``)
 Bot.inspect(options)
 ```
 
@@ -106,20 +106,20 @@ Bot.inspect(options)
 ## Coding in papa creator bot
 ### Run other command
 ```javascript
-Bot.runCommand("/command")
+Bot.runCommand(`/command`)
 ```
 
 **For Passing data**
 ```javascript
-Bot.runCommand("/command",
-{ data: "Your data here." })
+Bot.runCommand(`/command`,
+{ data: `Your data here.` })
 ```
 
 
 **Run command Delay 60sec.**
 ```javascript
 Bot.run({
-command: "/command",
+command: `/command`,
 run_after: 60
 })
 ```
@@ -128,9 +128,9 @@ run_after: 60
 ```javascript
 
 Bot.run({
-command: "/command",
+command: `/command`,
 run_after: 60,
-options: { data: "Your data here" }
+options: { data: `Your data here` }
 })
 
 ```
@@ -138,24 +138,24 @@ options: { data: "Your data here" }
 ### Methods 
  1. send message
 ```javascript
-Bot.sendMessage("text")
+Bot.sendMessage(`text`)
 ```
  3. send keyboard
  ```javascript
- Bot.sendKeyboard("btn","text")
+ Bot.sendKeyboard(`btn`,`text`)
  ```
  4. send inline keyboard
 ```javascript
 Bot.sendInlineKeyboard([[
-{ title: "btn",
-command: "/btn" } ]],
-"text")
+{ title: `btn`,
+command: `/btn` } ]],
+`text`)
 ```
  6. edit inline keyboard
 ```javascript
 Bot.editInlineKeyboard(
-[[{ title: "btn",
-command: "/btn" }]],
+[[{ title: `btn`,
+command: `/btn` }]],
 request.message.message_id)
 ```
 ### API Method 
@@ -163,17 +163,17 @@ https://core.telegram.org/bots/api
 1. send message
 ```javascript
 Api.sendMessage({
-text: "text"
+text: `text`
 })
 ```
 
  2. send keyboard
 ```javascript
 Api.sendMessage({
-text: "text",
+text: `text`,
 reply_markup: {
 resize_keyboard: true,
-keyboard: [[{ text: "btn" }]]
+keyboard: [[{ text: `btn` }]]
 }
 })
 ```
@@ -181,8 +181,8 @@ keyboard: [[{ text: "btn" }]]
  3. send inline keyboard 
 ```javascript
  Api.sendMessage({
- text: "text",
- reply_markup: { inline_keyboard: [[{ text: "btn",callback_data:"/btn" }]]
+ text: `text`,
+ reply_markup: { inline_keyboard: [[{ text: `btn`,callback_data: `/btn` }]]
 }
 })
 ```
@@ -190,8 +190,8 @@ keyboard: [[{ text: "btn" }]]
  4. edit inline keyboard
  ```javascript
  Api.editMessageText({ message_id: request.message.message_id,
- text: "text",
- reply_markup: { inline_keyboard: [[{ text: "new btn",callback_data:"/btn" }]] }
+ text: `text`,
+ reply_markup: { inline_keyboard: [[{ text: `new btn`,callback_data:`/btn` }]] }
  })
 ```
 See the telegram doc for more.
@@ -204,10 +204,10 @@ HTTPget({ url: "url",
 // Body if need// body:{},
 // Headers if need.
 // headers:{},
-success: "/success",
-error: "/error"
+success: `/success`,
+error: `/error`
 //, follow_redirects: true
-//, cookies: ""
+//, cookies: ``
 })
 ```
 
@@ -219,38 +219,38 @@ error: "/error"
 **Bot Set Data**
 
 ```javascript
-Bot.setProperty("YourPropName","hello world!","string")
+Bot.setProperty(`YourPropName`,`hello world!`,`string`)
 ```
 
 **Getting Bot Data**
 
 ```javascript
-Bot.getProperty("YourPropName")
+Bot.getProperty(`YourPropName`)
 ```
 
 **Bot set User Data**
 
 ```javascript
-User.setProperty("YourPropName",5,"integer")
+User.setProperty(|YourPropName`,5,`integer`)
 ```
 
 **Getting User Data**
 
 ```javascript
-User.getProperty("YourPropName")
+User.getProperty(`YourPropName`)
 ```
 
 ### Balance
 **User Balance**
 
 ```javascript
-var balance = Libs.ResourcesLib.userRes("money");
+var balance = Libs.ResourcesLib.userRes(`money`);
 ```
 
 **Global Balance**
 
 ```javascript
-var Globalbalance = Libs.ResourcesLib.anotherChatRes("money", "global");
+var Globalbalance = Libs.ResourcesLib.anotherChatRes(`money`, `global`);
 ```
 
 **Another Balance**
@@ -258,7 +258,7 @@ var Globalbalance = Libs.ResourcesLib.anotherChatRes("money", "global");
 telegramid - it is telegram id for another user
 
 ```javascript
-var balance = Libs.ResourcesLib.anotherUserRes("money", telegramid);
+var balance = Libs.ResourcesLib.anotherUserRes(`money`, telegramid);
 ```
 
 **Balance can use**
@@ -270,16 +270,16 @@ var balance = Libs.ResourcesLib.anotherUserRes("money", telegramid);
 
 ```javascript
 function doTouchOwnLink(){
-Bot.sendMessage("You click on yours own link!")
+Bot.sendMessage(`You click on yours own link!`)
 }
 
 function doAttracted(refUser){
-Bot.sendMessage("Hello" ± "\n\n" ± "You attracted by user: " ± Libs.commonLib.getLinkFor(refUser))
-Bot.sendMessageToChatWithId(refUser.telegramid,"You just attract new user: " ± Libs.commonLib.getLinkFor(user))
+Bot.sendMessage(`Hello` ± `\n\n` ± `You attracted by user: ` ± Libs.commonLib.getLinkFor(refUser))
+Bot.sendMessageToChatWithId(refUser.telegramid,`You just attract new user: ` ± Libs.commonLib.getLinkFor(user))
 }
 
 function doAlreadyAttracted(){
-Bot.sendMessage("You was already attracted")}
+Bot.sendMessage(`You was already attracted`)}
 
 var trackOptions = { onTouchOwnLink:doTouchOwnLink,onAttracted:doAttracted, onAlreadyAttracted:doAlreadyAttracted }
 
@@ -294,8 +294,8 @@ var link = Libs.ReferralLib.getLink()
 
 * **Referral Set Link**
 ```javascript
-Libs.ReferralLib.setLinkPrefix("")
-Libs.ReferralLib.setLinkPrefix("User")
+Libs.ReferralLib.setLinkPrefix(``)
+Libs.ReferralLib.setLinkPrefix(`User`)
 ```
 
 **Referral List**
@@ -313,7 +313,7 @@ Libs.ReferralLib.getRefCount()
 
 ```javascript
 var list = Libs.ReferralLib.getTopList()`
-list.order_by = "integer_value"
+list.order_by = `integer_value`
 list.order_ascending = false
 
 var items = list.get()
