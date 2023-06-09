@@ -321,7 +321,7 @@ var items = list.get()
 var Myreferral = Libs.ReferralLib.getAttractedBy()
 ```
 
-# If you Dont know How it Work You can Ask Join Telegram Group
+
 * 📨 **Email**:
 
 papacreatorbot@gmail.com
