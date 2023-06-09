@@ -339,7 +339,7 @@ Need create command `/inlineQuery`. Such a name is required.
 var list = []
 if(!request.query) {
 //without searching item
-//result https://github.com/PapaCreatorBot/Help/blob/main/images/IMG_20230610_073604.jpg
+//result https://github.com/PapaCreatorBot/Help/blob/main/images/IMG_20230610_073604.jpg?raw=true
 list.push({
   type: `article`,
   id: `id_1`,
@@ -372,7 +372,7 @@ Api.answerInlineQuery({
 })
 } else {
 //searching item
-//result https://github.com/PapaCreatorBot/Help/blob/main/images/IMG_20230610_073549.jpg
+//result https://github.com/PapaCreatorBot/Help/blob/main/images/IMG_20230610_073549.jpg?raw=true
 var query = request.query.toLowerCase()
 if(query==`id_1`){
 list.push({
