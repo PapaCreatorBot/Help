@@ -181,14 +181,17 @@ keyboard: [[{ text: "btn" }]]
  3. send inline keyboard 
 ```javascript
  Api.sendMessage({
- text: "text", reply_markup: { inline_keyboard: [[{ text: "btn",callback_data:"/btn" }]]
+ text: "text",
+ reply_markup: { inline_keyboard: [[{ text: "btn",callback_data:"/btn" }]]
 }
 })
 ```
 
  4. edit inline keyboard
  ```javascript
- Api.editMessageText({ message_id: request.message.message_id, text: "text",reply_markup: { inline_keyboard: [[{ text: "new btn",callback_data:"/btn" }]] }
+ Api.editMessageText({ message_id: request.message.message_id,
+ text: "text",
+ reply_markup: { inline_keyboard: [[{ text: "new btn",callback_data:"/btn" }]] }
  })
 ```
 See the telegram doc for more.
