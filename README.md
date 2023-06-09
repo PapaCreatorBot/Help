@@ -231,7 +231,7 @@ Bot.getProperty(`YourPropName`)
 **Bot set User Data**
 
 ```javascript
-User.setProperty(|YourPropName`,5,`integer`)
+User.setProperty(`YourPropName`,5,`integer`)
 ```
 
 **Getting User Data**
