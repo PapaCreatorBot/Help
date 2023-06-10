@@ -410,6 +410,13 @@ Api.answerInlineQuery({
 }
 ```
 ### Web App
+1. Go to @BotFather
+2. mybots select your bot
+3. Bot settings
+4. Menu buttons > config menu button
+5. send url
+Get URL from👇
+
 ```javascript
 var url = WebApp.getUrl({ command: "/webapp" });
 var content = 
@@ -425,6 +432,10 @@ YOUR SCRIPT FOR JS.
 </html>`
 WebApp.render({ content: content });
 Bot.inspect(url)
+```
+### Sample Shop Web App
+```javascript
+hello
 ```
 
 ## Contact
