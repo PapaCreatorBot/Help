@@ -430,7 +430,7 @@ YOUR SCRIPT
 YOUR SCRIPT FOR JS.
 </script>
 </html>`
-var url = WebApps(content)
+var url = WebAppURL(content)
 Bot.inspect(url)
 
 ```
@@ -506,7 +506,7 @@ var content = `<html>
 </script>
 </body>
 </html>`
-var url = WebApps(content)
+var url = WebAppURL(content)
 Bot.inspect(url)
 
 ```
