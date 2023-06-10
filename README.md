@@ -434,7 +434,7 @@ var url = WebApp.getUrl({ command: "/webapp", options:{ content: content } });
 Bot.inspect(url)
 ```
 ### Sample Shop Web App
-**command:- `/webapp`**
+**command:- `/weblink`**
 ```javascript
 
 var content = `<html>
