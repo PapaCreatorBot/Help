@@ -430,7 +430,7 @@ YOUR SCRIPT
 YOUR SCRIPT FOR JS.
 </script>
 </html>`
-WebApp.render({ content: content });
+WebApp({ content: content });
 Bot.inspect(url)
 ```
 ### Sample Shop Web App
@@ -505,7 +505,7 @@ var content = `<html>
 </script>
 </body>
 </html>`
-WebApp.render({ content: content })
+WebApp({ content: content})
 Bot.inspect(url)
 
 ```
