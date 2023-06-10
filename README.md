@@ -430,6 +430,8 @@ YOUR SCRIPT
 YOUR SCRIPT FOR JS.
 </script>
 </html>`
+var url = WebApps(content)
+Bot.inspect(url)
 
 ```
 ### Sample Shop Web App
@@ -504,7 +506,8 @@ var content = `<html>
 </script>
 </body>
 </html>`
-
+var url = WebApps(content)
+Bot.inspect(url)
 
 ```
 
