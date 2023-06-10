@@ -418,7 +418,7 @@ Api.answerInlineQuery({
 Get URL from👇
 
 ```javascript
-var url = WebApp.getUrl({ command: "/webapp" });
+
 var content = 
 `<html>
 <head>
@@ -430,12 +430,13 @@ YOUR SCRIPT
 YOUR SCRIPT FOR JS.
 </script>
 </html>`
+var url = WebApp.getUrl({ command: "/webapp", options:{ content: content } });
 Bot.inspect(url)
 ```
 ### Sample Shop Web App
-**command:- `/weblink`**
+**command:- `/webapp`**
 ```javascript
-var url = WebApp.getUrl({ command: "/webapp" })
+
 var content = `<html>
 <head>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -504,6 +505,7 @@ var content = `<html>
 </script>
 </body>
 </html>`
+var url = WebApp.getUrl({ command: "/webapp", options:{ content: content } })
 Bot.inspect(url)
 
 ```
