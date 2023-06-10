@@ -434,9 +434,80 @@ WebApp.render({ content: content });
 Bot.inspect(url)
 ```
 ### Sample Shop Web App
-**command:- /webapp**
+**command:- `/webapp`**
 ```javascript
-hello
+var url = WebApp.getUrl({ command: "/webapp" })
+var content = `<html>
+<head>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<style>
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.product-description {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 20px;
+  margin: 0;
+}
+
+.buy-now-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buy-now-btn:hover {
+  background-color: #3e8e41;
+}
+</style>
+</body>
+
+<div class="product">
+  <img src="product-image.jpg" alt="Product Image">
+  <h2 class="product-name">Product Name</h2>
+  <p class="product-description">Description of the product goes here.</p>
+  <p class="product-price">$19.99</p>
+  <button class="buy-now-btn" type="button">Buy Now</button>
+</div>
+
+<script>
+//YOUR SCRIPT FOR CLICKING BUY BUTTON
+</script>
+</body>
+</html>`
+WebApp.render({ content: content })
+Bot.inspect(url)
+
 ```
 
 ## Contact
