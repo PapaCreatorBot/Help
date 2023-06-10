@@ -434,6 +434,7 @@ WebApp.render({ content: content });
 Bot.inspect(url)
 ```
 ### Sample Shop Web App
+**command:- /webapp**
 ```javascript
 hello
 ```
