@@ -510,6 +510,8 @@ var url = WebAppURL(content)
 Bot.inspect(url)
 
 ```
+**Passing variable**
+`${bot}`,`${user}`, `{Bot.getProperty("Prop")}` Bot and User prop
 
 ## Contact
 * 📨 **Email**:
