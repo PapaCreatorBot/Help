@@ -435,7 +435,7 @@ Bot.inspect(url)
 
 ```
 ### Sample Shop Web App
-**command:- `/weblink`**
+**command:- `/webapp`**
 ```javascript
 
 var content = `<html>
