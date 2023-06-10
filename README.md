@@ -496,7 +496,7 @@ var content = `<html>
 <div class="product">
   <img src="product-image.jpg" alt="Product Image">
   <h2 class="product-name">Product Name</h2>
-  <p class="product-description">Description of the product goes here.</p>
+  <p class="product-description">Description of the product ${bot.name} goes here.</p>
   <p class="product-price">$19.99</p>
   <button class="buy-now-btn" type="button">Buy Now</button>
 </div>
