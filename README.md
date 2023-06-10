@@ -430,8 +430,7 @@ YOUR SCRIPT
 YOUR SCRIPT FOR JS.
 </script>
 </html>`
-var url = WebApp.getUrl({ command: "/webapp", options:{ content: content } });
-Bot.inspect(url)
+
 ```
 ### Sample Shop Web App
 **command:- `/weblink`**
@@ -505,8 +504,7 @@ var content = `<html>
 </script>
 </body>
 </html>`
-var url = WebApp.getUrl({ command: "/webapp", options:{ content: content } })
-Bot.inspect(url)
+
 
 ```
 
