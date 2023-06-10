@@ -512,7 +512,9 @@ Bot.inspect(url)
 ```
 **Passing variable**
 `${bot}`,`${user}`, `${request}`, `{Bot.getProperty("Prop")}`
+
 both `Bot` and `User` prop
+
 
 **inspect your data `${inspect(bot)}`**
 
