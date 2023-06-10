@@ -410,7 +410,7 @@ Api.answerInlineQuery({
 }
 ```
 ### Web App
-1. Go to @BotFather
+1. Go to [@BotFather](https://t.me/BotFather)
 2. mybots select your bot
 3. Bot settings
 4. Menu buttons > config menu button
