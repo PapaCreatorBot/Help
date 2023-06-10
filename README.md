@@ -410,6 +410,22 @@ Api.answerInlineQuery({
 }
 ```
 ### Web App
+```javascript
+var url = WebApp.getUrl({ command: "/webapp" });
+var content = 
+`<html>
+<head>
+<script
+YOUR SCRIPT
+></script>
+</head>
+<script>
+YOUR SCRIPT FOR JS.
+</script>
+</html>`
+WebApp.render({ content: content });
+Bot.inspect(url)
+```
 
 ## Contact
 * 📨 **Email**:
