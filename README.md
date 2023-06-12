@@ -503,6 +503,9 @@ var content = `<html>
 
 <script>
 //YOUR SCRIPT FOR CLICKING BUY BUTTON
+window.Telegram.WebApp.showAlert(`${bot.name}
+
+Button Click!`)
 </script>
 </body>
 </html>`
