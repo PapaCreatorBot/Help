@@ -68,7 +68,7 @@ Bot.sendMessage(`What is your name?`)
 Bot.runCommand(`/ontest`)
 ```
 
-1. **for passing data** 
+1. **Pass data** 
 ```javascript
 Bot.sendMessage(`What is your name?`)
 Bot.runCommand(`/ontest`,
@@ -92,7 +92,7 @@ Bot.runCommand(`/ontest`,
 Bot.sendMessage(`Hello `±message±``)
 ```
 
-2. **for passing data**
+2. **Get data**
 ```javascript
 Bot.sendMessage(`Hello `±message±``)
 Bot.inspect(options)
@@ -109,7 +109,7 @@ Bot.inspect(options)
 Bot.runCommand(`/command`)
 ```
 
-**For Passing data**
+**Pass data**
 ```javascript
 Bot.runCommand(`/command`,
 { data: `Your data here.` })
@@ -123,7 +123,7 @@ command: `/command`,
 run_after: 60
 })
 ```
-**For Passing data**
+**Pass data**
 
 ```javascript
 
