@@ -222,7 +222,7 @@ error: `/error`
 Bot.setProperty(`YourPropName`,`hello world!`,`string`)
 ```
 
-**Getting Bot Data**
+**Get Bot Data**
 
 ```javascript
 Bot.getProperty(`YourPropName`)
@@ -234,7 +234,7 @@ Bot.getProperty(`YourPropName`)
 User.setProperty(`YourPropName`,5,`integer`)
 ```
 
-**Getting User Data**
+**Get User Data**
 
 ```javascript
 User.getProperty(`YourPropName`)
