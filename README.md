@@ -314,7 +314,7 @@ Libs.ReferralLib.getRefCount()
 **Referral Top List**
 
 ```javascript
-var list = Libs.ReferralLib.getTopList()`
+var list = Libs.ReferralLib.getTopList()
 list.order_by = `integer_value`
 list.order_ascending = false
 
