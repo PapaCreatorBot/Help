@@ -498,14 +498,14 @@ var content = `<html>
   <h2 class="product-name">Product Name</h2>
   <p class="product-description">Description of the product ${bot.name} goes here.</p>
   <p class="product-price">$19.99</p>
-  <button class="buy-now-btn" type="button">Buy Now</button>
+  <button class="buy-now-btn" onclick="showAlert()">Buy Now</button>
 </div>
 
 <script>
 //YOUR SCRIPT FOR CLICKING BUY BUTTON
-window.Telegram.WebApp.showAlert(`${bot.name}
+window.Telegram.WebApp.showAlert("${bot.name}
 
-Button Click!`)
+Button Click!")
 </script>
 </body>
 </html>`
