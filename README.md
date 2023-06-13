@@ -507,7 +507,7 @@ var content = `<html>
 function showAlert(){
 //var balance = ${Libs.ResourcesLib.userRes("money").value()}
 //if(!balance){
-//alert('You dont have balance.')
+//window.Telegram.WebApp.showAlert('You dont have balance.')
 //return
 //}
 window.Telegram.WebApp.showAlert('🙌 Button click ${bot.name}')
