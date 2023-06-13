@@ -505,9 +505,9 @@ var content = `<html>
 //YOUR SCRIPT FOR CLICKING BUY BUTTON
 //Add logic
 //var balance= ${Libs.ResourcesLib.userRes("money").value()}
-//if(!balance){return alert('You don't have balance.')}
+//if(!balance){ return alert('You don't have balance.')}
 function showAlert(){
-window.Telegram.WebApp.showAlert('🙌 ${bot.name} button click')
+window.Telegram.WebApp.showAlert('🙌 Button click ${bot.name}')
 }
 </script>
 </body>
@@ -516,7 +516,7 @@ var url = WebAppURL(content)
 Bot.inspect(url)
 
 ```
-**Passing variable**
+**Pass variable**
 `${bot}`,`${user}`, `${request}`, `{Bot.getProperty("Prop")}`
 
 both `Bot` and `User` prop
