@@ -504,9 +504,12 @@ var content = `<html>
 <script>
 //YOUR SCRIPT FOR CLICKING BUY BUTTON
 //Add logic
-//var balance= ${Libs.ResourcesLib.userRes("money").value()}
-//if(!balance){ return alert('You don't have balance.')}
 function showAlert(){
+//var balance = ${Libs.ResourcesLib.userRes("money").value()}
+//if(!balance){
+//alert('You dont have balance.')
+//return
+//}
 window.Telegram.WebApp.showAlert('🙌 Button click ${bot.name}')
 }
 </script>
