@@ -505,11 +505,11 @@ var content = `<html>
 //YOUR SCRIPT FOR CLICKING BUY BUTTON
 //Add logic
 function showAlert(){
-//var balance = ${Libs.ResourcesLib.userRes("money").value()}
-//if(!balance){
-//window.Telegram.WebApp.showAlert('You dont have balance.')
-//return
-//}
+var balance = ${Libs.ResourcesLib.userRes("money").value()}
+if(!balance){
+window.Telegram.WebApp.showAlert('You dont have balance.')
+return
+}
 window.Telegram.WebApp.showAlert('🙌 Button clicks ${bot.name}')
 }
 </script>
