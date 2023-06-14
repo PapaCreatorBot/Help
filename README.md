@@ -528,18 +528,15 @@ both `Bot` and `User` prop
 **inspect your data `${inspect(bot)}`**
 
 ## Contact
-* 📨 **Email**:
 
+* 📨 **Email**:
 papacreatorbot@gmail.com
 
 * 🌐 **Group Chat**:
-
 https://t.me/papacreator
 
 * 🌐 **Channel**:
-
 https://t.me/newspapacreatorbot
 
 * 🌐 **Unofficial Channel**:
-
 https://t.me/PapacodeDrop
