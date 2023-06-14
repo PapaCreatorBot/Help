@@ -510,7 +510,7 @@ function showAlert(){
 //window.Telegram.WebApp.showAlert('You dont have balance.')
 //return
 //}
-window.Telegram.WebApp.showAlert('🙌 Button click ${bot.name}')
+window.Telegram.WebApp.showAlert('🙌 Button clicks ${bot.name}')
 }
 </script>
 </body>
