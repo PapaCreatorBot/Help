@@ -60,9 +60,7 @@ Bot.sendMessage(`What is your name?`)
 Bot.runCommand(`/ontest`,
 { data: `Your data here.` })
 ```
-
 4. Wait for answer `"OFF"`
-
 5. Click Save button Done!
 
 
@@ -70,7 +68,6 @@ Bot.runCommand(`/ontest`,
 
 1. Don't Fill answer
 2. Fill command: `/ontest`
-
 3. Fill code:
 ```javascript
 
