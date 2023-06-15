@@ -12,16 +12,12 @@
 ## How to create command on Papa Creator Bot?
 
 1. Tap the button "create a new command"
- 
 2. Fill command: `/start`
-
 3. Fill Code: 
 ```javascript
 Bot.sendMessage(`Hello World!`)
 ```
-
 5. Click save button Done!
-
 ### result
 ![](https://github.com/PapaCreatorBot/Help/blob/6930411f86321ec81f5d824ca1a4ccbf99bc8142/images/IMG_20230531_124504.jpg)
 
@@ -30,19 +26,14 @@ Bot.sendMessage(`Hello World!`)
 ## How to use Answer
 
 1. Fill answer:
-
 ```
 What is your name?
 ```
-
-
 3. Fill Codes:
 ```javascript
 Bot.sendMessage(`Hi `±message±``)
 ```
-
 4. Wait for answer `"ON"`
-
 5. Click Save button Done!
 
 ### result
@@ -56,9 +47,7 @@ Bot.sendMessage(`Hi `±message±``)
 * **Command 1**
 
 1. Don't Fill answer
-
 2. Fill command: `/test`
-
 3. Fill code: 
 ```javascript
 Bot.sendMessage(`What is your name?`)
