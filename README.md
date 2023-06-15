@@ -83,7 +83,6 @@ Bot.runCommand(`/ontest`,
 * **Command 2**
 
 1. Don't Fill answer
-
 2. Fill command: `/ontest`
 
 3. Fill code:
@@ -91,17 +90,13 @@ Bot.runCommand(`/ontest`,
 
 Bot.sendMessage(`Hello `±message±``)
 ```
-
 2. **Get data**
 ```javascript
 Bot.sendMessage(`Hello `±message±``)
 Bot.inspect(options)
 ```
-
 4. Wait for answer `"ON"`
-
 5. Click Save button Done!
-
 
 ## Coding in papa creator bot
 ### Run other command
@@ -371,6 +366,7 @@ Api.answerInlineQuery({
   cache_time: 300
 })
 } else {
+
 //searching item
 //result https://github.com/PapaCreatorBot/Help/blob/main/images/IMG_20230610_073549.jpg?raw=true
 var query = request.query.toLowerCase()
@@ -388,6 +384,7 @@ list.push({
   }
 })
 }
+
 if(query==`id_2`){
 list.push({
   type: `article`,
@@ -500,7 +497,6 @@ var content = `<html>
   <p class="product-price">$19.99</p>
   <button class="buy-now-btn" onclick="showAlert()">Buy Now</button>
 </div>
-
 <script>
 //YOUR SCRIPT FOR CLICKING BUY BUTTON
 //Add logic
