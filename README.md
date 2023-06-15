@@ -3,11 +3,8 @@
 
 ## How to create Bot on Papa Creator Bot?
 1. Create bot with [@BotFather](https://t.me/BotFather)
-
 2. Now create bot in [@PapaCreatorBot](https://t.me/PapaCreatorBot)
-
 3. then fill your bot token
-
 4. Done! START the bot and make commands
 
 
