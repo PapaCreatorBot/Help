@@ -31,7 +31,7 @@ What is your name?
 ```
 3. Fill Codes:
 ```javascript
-Bot.sendMessage(`Hi `±message±``)
+Bot.sendMessage(`Hi `±message)
 ```
 4. Wait for answer `"ON"`
 5. Click Save button Done!
@@ -70,7 +70,6 @@ Bot.runCommand(`/ontest`,
 2. Fill command: `/ontest`
 3. Fill code:
 ```javascript
-
 Bot.sendMessage(`Hello `±message±``)
 ```
 2. **Get data**
