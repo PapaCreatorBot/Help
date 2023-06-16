@@ -416,7 +416,6 @@ Bot.inspect(url)
 ### Sample Shop Web App
 **command:- `/webapp`**
 ```javascript
-
 var content = `<html>
 <head>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -497,7 +496,7 @@ var url = WebAppURL(content)
 Bot.inspect(url)
 
 ```
-**Pass variable**
+**Pass Variable**
 `${bot}`,`${user}`, `${request}`, `{Bot.getProperty("Prop")}`
 
 both `Bot` and `User` prop
