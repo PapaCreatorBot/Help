@@ -255,7 +255,9 @@ Bot.sendMessageToChatWithId(refUser.telegramid,`You just attract new user: ` ± 
 }
 
 function doAlreadyAttracted(){
+if(params){
 Bot.sendMessage(`You was already attracted`)
+ }
 }
 
 var trackOptions = { onTouchOwnLink:doTouchOwnLink,onAttracted:doAttracted, onAlreadyAttracted:doAlreadyAttracted
