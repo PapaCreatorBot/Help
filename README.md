@@ -21,7 +21,6 @@ Bot.sendMessage(`Hello World!`)
 ![](https://github.com/PapaCreatorBot/Help/blob/6930411f86321ec81f5d824ca1a4ccbf99bc8142/images/IMG_20230531_124504.jpg)
 
 
-
 ## How to use Answer
 
 1. Fill answer:
