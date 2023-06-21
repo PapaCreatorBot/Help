@@ -176,7 +176,7 @@ See the telegram doc for more.
 **GET and POST response**
 
 ```javascript
-HTTPget({ url: "url",
+HTTPget({ url: `url`,
 // Body if need// body:{},
 // Headers if need.
 // headers:{},
