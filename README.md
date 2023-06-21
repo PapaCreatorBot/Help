@@ -226,7 +226,7 @@ var balance = Libs.ResourcesLib.userRes(`money`);
 **Global Balance**
 
 ```javascript
-var Globalbalance = Libs.ResourcesLib.anotherChatRes(`money`, `global`);
+var globalbalance = Libs.ResourcesLib.anotherChatRes(`money`, `global`);
 ```
 
 **Another Balance**
@@ -299,7 +299,7 @@ var items = list.get()
 
 **My Referral**
 ```javascript
-var Myreferral = Libs.ReferralLib.getAttractedBy()
+var myreferrals = Libs.ReferralLib.getAttractedBy()
 ```
 
 ### Inline Mode
