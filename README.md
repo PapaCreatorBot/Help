@@ -272,7 +272,7 @@ Libs.ReferralLib.track(trackOptions)
 var link = Libs.ReferralLib.getLink()
 ```
 
-* **Referral Set Link**
+**Referral Set Link**
 ```javascript
 Libs.ReferralLib.setLinkPrefix(``)
 Libs.ReferralLib.setLinkPrefix(`User`)
