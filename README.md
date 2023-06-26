@@ -14,7 +14,7 @@
 2. Fill command: `/start`
 3. Fill Code: 
 ```javascript
-Bot.sendMessage(`Hello World!`)
+Bot.sendMessage(`Hello World!`);
 ```
 5. Click save button Done!
 ### result
@@ -29,7 +29,7 @@ What is your name?
 ```
 3. Fill Codes:
 ```javascript
-Bot.sendMessage(`Hi `±message)
+Bot.sendMessage(`Hi `±message);
 ```
 4. Wait for answer `"ON"`
 5. Click Save button Done!
@@ -48,15 +48,15 @@ Bot.sendMessage(`Hi `±message)
 2. Fill command: `/test`
 3. Fill code: 
 ```javascript
-Bot.sendMessage(`What is your name?`)
-Bot.runCommand(`/ontest`)
+Bot.sendMessage(`What is your name?`);
+Bot.runCommand(`/ontest`);
 ```
 
 1. **Pass data** 
 ```javascript
-Bot.sendMessage(`What is your name?`)
+Bot.sendMessage(`What is your name?`);
 Bot.runCommand(`/ontest`,
-{ data: `Your data here.` })
+{ data: `Your data here.` });
 ```
 4. Wait for answer `"OFF"`
 5. Click Save button Done!
@@ -68,12 +68,12 @@ Bot.runCommand(`/ontest`,
 2. Fill command: `/ontest`
 3. Fill code:
 ```javascript
-Bot.sendMessage(`Hello `±message±``)
+Bot.sendMessage(`Hello `±message±``);
 ```
 2. **Get data**
 ```javascript
-Bot.sendMessage(`Hello `±message±``)
-Bot.inspect(options)
+Bot.sendMessage(`Hello `±message±``);
+Bot.inspect(options);
 ```
 4. Wait for answer `"ON"`
 5. Click Save button Done!
@@ -81,13 +81,13 @@ Bot.inspect(options)
 ## Coding in papa creator bot
 ### Run other command
 ```javascript
-Bot.runCommand(`/command`)
+Bot.runCommand(`/command`);
 ```
 
 **Pass data**
 ```javascript
 Bot.runCommand(`/command`,
-{ data: `Your data here.` })
+{ data: `Your data here.` });
 ```
 
 
@@ -96,7 +96,7 @@ Bot.runCommand(`/command`,
 Bot.run({
 command: `/command`,
 run_after: 60
-})
+});
 ```
 **Pass data**
 
@@ -106,32 +106,32 @@ Bot.run({
 command: `/command`,
 run_after: 60,
 options: { data: `Your data here` }
-})
+});
 
 ```
 
 ### Methods 
  1. send message
 ```javascript
-Bot.sendMessage(`text`)
+Bot.sendMessage(`text`);
 ```
  3. send keyboard
  ```javascript
- Bot.sendKeyboard(`btn`,`text`)
+ Bot.sendKeyboard(`btn`,`text`);
  ```
  4. send inline keyboard
 ```javascript
 Bot.sendInlineKeyboard([[
 { title: `btn`,
 command: `/btn` } ]],
-`text`)
+`text`);
 ```
  6. edit inline keyboard
 ```javascript
 Bot.editInlineKeyboard(
 [[{ title: `btn`,
 command: `/btn` }]],
-request.message.message_id)
+request.message.message_id);
 ```
 ### API Method 
 https://core.telegram.org/bots/api
@@ -139,7 +139,7 @@ https://core.telegram.org/bots/api
 ```javascript
 Api.sendMessage({
 text: `text`
-})
+});
 ```
 
  2. send keyboard
@@ -150,7 +150,7 @@ reply_markup: {
 resize_keyboard: true,
 keyboard: [[{ text: `btn` }]]
 }
-})
+});
 ```
 
  3. send inline keyboard 
@@ -159,7 +159,7 @@ keyboard: [[{ text: `btn` }]]
  text: `text`,
  reply_markup: { inline_keyboard: [[{ text: `btn`,callback_data: `/btn` }]]
 }
-})
+});
 ```
 
  4. edit inline keyboard
@@ -167,7 +167,7 @@ keyboard: [[{ text: `btn` }]]
  Api.editMessageText({ message_id: request.message.message_id,
  text: `text`,
  reply_markup: { inline_keyboard: [[{ text: `new btn`,callback_data:`/btn` }]] }
- })
+ });
 ```
 See the telegram doc for more.
 
@@ -183,7 +183,7 @@ success: `/success`,
 error: `/error`
 //, follow_redirects: true
 //, cookies: ``
-})
+});
 ```
 
 ### Properties 
@@ -194,25 +194,25 @@ error: `/error`
 **Bot Set Data**
 
 ```javascript
-Bot.setProperty(`YourPropName`,`hello world!`,`string`)
+Bot.setProperty(`YourPropName`,`hello world!`,`string`);
 ```
 
 **Get Bot Data**
 
 ```javascript
-Bot.getProperty(`YourPropName`)
+Bot.getProperty(`YourPropName`);
 ```
 
 **Bot set User Data**
 
 ```javascript
-User.setProperty(`YourPropName`,5,`integer`)
+User.setProperty(`YourPropName`,5,`integer`);
 ```
 
 **Get User Data**
 
 ```javascript
-User.getProperty(`YourPropName`)
+User.getProperty(`YourPropName`);
 ```
 
 ### Balance
@@ -238,69 +238,69 @@ var balance = Libs.ResourcesLib.anotherUserRes(`money`, telegramid);
 
 **Balance can use**
 
-* `balance.add(1)`, `balance.remove(1)`, `balance.value()`, `balance.value().toFixed(4)`
+* `balance.add(1)`, `balance.remove(1)`, `balance.value()`, `balance.value().toFixed()`
 
 ### Referral
 * Basic function is **track**. Prefer to call it on /start
 
 ```javascript
 function doTouchOwnLink(){
-Bot.sendMessage(`You click on yours own link!`)
-}
+Bot.sendMessage(`You click on yours own link!`);
+};
 
 function doAttracted(refUser){
 Bot.sendMessage(`Hello` ± `\n\n` ± `You attracted by user: ` ± Libs.commonLib.getLinkFor(refUser))
-Bot.sendMessageToChatWithId(refUser.telegramid,`You just attract new user: ` ± Libs.commonLib.getLinkFor(user))
-}
+Bot.sendMessageToChatWithId(refUser.telegramid,`You just attract new user: ` ± Libs.commonLib.getLinkFor(user));
+};
 
 function doAlreadyAttracted(){
 if(params){
-Bot.sendMessage(`You was already attracted`)
- }
-}
+Bot.sendMessage(`You was already attracted`);
+ };
+};
 
 var trackOptions = { onTouchOwnLink:doTouchOwnLink,onAttracted:doAttracted, onAlreadyAttracted:doAlreadyAttracted
-}
+};
 
-Libs.ReferralLib.track(trackOptions)
+Libs.ReferralLib.track(trackOptions);
 ```
 
 **Referral Link**
 
 ```javascript
-var link = Libs.ReferralLib.getLink()
+var link = Libs.ReferralLib.getLink();
 ```
 
 **Referral Set Link**
 ```javascript
-Libs.ReferralLib.setLinkPrefix(``)
-Libs.ReferralLib.setLinkPrefix(`User`)
+Libs.ReferralLib.setLinkPrefix(``);
+Libs.ReferralLib.setLinkPrefix(`User`);
 ```
 
 **Referral List**
 ```javascript
-var refList = Libs.ReferralLib.getRefList()
-var users = refList.getUsers()
+var refList = Libs.ReferralLib.getRefList();
+var users = refList.getUsers();
 ```
 
 **Referral Count**
 ```javascript
-Libs.ReferralLib.getRefCount()
+Libs.ReferralLib.getRefCount();
 ```
 
 **Referral Top List**
 
 ```javascript
-var list = Libs.ReferralLib.getTopList()
-list.order_by = `integer_value`
-list.order_ascending = false
+var list = Libs.ReferralLib.getTopList();
+list.order_by = `integer_value`;
+list.order_ascending = false;
 
-var items = list.get()
+var items = list.get();
 ```
 
 **My Referral**
 ```javascript
-var myreferrals = Libs.ReferralLib.getAttractedBy()
+var myreferrals = Libs.ReferralLib.getAttractedBy();
 ```
 
 ### Inline Mode
@@ -328,7 +328,7 @@ list.push({
  parse_mode: `Markdown`,
  disable_web_page_preview: true
   }
-})
+});
 //no. 2
 list.push({
   type: `article`,
@@ -341,12 +341,12 @@ list.push({
  parse_mode: `Markdown`,
  disable_web_page_preview: true
   }
-})
+});
 Api.answerInlineQuery({
   inline_query_id: request.id,
   results: list,
   cache_time: 300
-})
+});
 } else {
 
 //searching item
@@ -364,8 +364,8 @@ list.push({
  parse_mode: `Markdown`,
  disable_web_page_preview: true
   }
-})
-}
+});
+};
 
 if(query==`id_2`){
 list.push({
@@ -379,13 +379,13 @@ list.push({
  parse_mode: `Markdown`,
  disable_web_page_preview: true
   }
-})
-}
+});
+};
 Api.answerInlineQuery({
   inline_query_id: request.id,
   results: list,
   cache_time: 300
-  })
+  });
 }
 ```
 ### Web App
@@ -409,8 +409,8 @@ YOUR SCRIPT
 YOUR SCRIPT FOR JS.
 </script>
 </html>`
-var url = WebAppURL(content)
-Bot.inspect(url)
+var url = WebAppURL(content);
+Bot.inspect(url);
 
 ```
 ### Sample Shop Web App
@@ -482,22 +482,22 @@ var content = `<html>
 //YOUR SCRIPT FOR CLICKING BUY BUTTON
 //Add logic
 function showAlert(){
-var balance = ${Libs.ResourcesLib.userRes("money").value()}
+var balance = ${Libs.ResourcesLib.userRes("money").value()};
 if(!balance){
-window.Telegram.WebApp.showAlert('You dont have balance.')
-return
-}
-window.Telegram.WebApp.showAlert('🙌 Button clicks ${bot.name}')
+window.Telegram.WebApp.showAlert('You dont have balance.');
+return;
+};
+window.Telegram.WebApp.showAlert('🙌 Button click!');
 }
 </script>
 </body>
 </html>`
-var url = WebAppURL(content)
-Bot.inspect(url)
+var url = WebAppURL(content);
+Bot.inspect(url);
 
 ```
 **Pass Variable**
-`${bot}`,`${user}`, `${request}`, `{Bot.getProperty("Prop")}`
+`${bot}`,`${user}`, `${request}`, `{Bot.getProperty("Prop")}`, `Libs.ResourcesLib.userRes("money")`
 
 both `Bot` and `User` prop
 
